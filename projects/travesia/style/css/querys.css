@@ -28,9 +28,10 @@
     #laContainer #muckup{
         width: 600px;
         margin-top: 0;
-        margin-left: -90px;
+        margin-left: -120px;
     }
     #laContainer #description h1{
+        font-size: 3em;
         margin-top: 50px;
         margin-bottom: 50px;
     }
@@ -45,6 +46,7 @@
     }
     #laContainer #iphoneMuckup{
         width: 500px;
+        margin-left: -40px;
     }
     #laContainer .nextContainer{
         margin-top: 0px;
