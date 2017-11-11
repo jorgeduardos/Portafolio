@@ -1,0 +1,17 @@
+@media only screen and (max-width: 767px) {
+    body::-webkit-scrollbar{
+        display: none;
+    }
+    #mobile-nav-icon{
+        display: block;
+    }
+    #menuIcon{
+        display: none;
+    }
+}
+
+/*@media only screen and (max-width: 320px) {
+    #contactContainer .titleDiv h1:after{
+        right: 42%;
+    }
+}*/

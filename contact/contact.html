@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Jesa Web Design</title>
+	<title>JESA Web Design</title>
+	<link href="https://fonts.googleapis.com/css?family=Fira+Sans:300,400,500,700" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+	<link rel="stylesheet" href="style/css/style.css">
+	<link rel="stylesheet" href="style/css/querys.css">
+
+
+</head>
+<body>
+	<nav id="navBar">
+		<ul>
+			<li><a class="bAcross" href="../index.html#sectionWho" id="whoNav">Who</a></li>
+			<li><a class="bAcross" href="../index.html#sectionWork" id="whatNav">Projects</a></li>
+			<li><a href="../index.html"><img src="../resources/style/css/images/logo/logoNavBar.png" alt="JESA logo"></a></li>
+			<li><a class="bAcross" href="#">About</a></li>
+			<li><a class="bAcross" href="#">Contact</a></li>
+		</ul>
+	</nav>
+	<!-- mobile navbar -->
+	<nav class="mobile-nav">
+		<ul>
+			<li  id="mobile-nav-upper"><img id="logoNavbar" src="style/css/logoNavBar.png" alt="JESA logo"></li>
+			<li id="whoNav-mob"><a href="../index.html#sectionWho">Who</a></li>
+			<li id="whatNav-mob"><a href="../index.html#sectionWork">Projects</a></li>
+			<li id="aboutNav-mob"><a>About</a></li>
+			<li><a  href="contact/contact.html">Contact</a></li>
+		</ul>
+	</nav> 
+	<div id="menuIcon"><i class="ion-android-menu"></i></div>
+	<div id="mobile-nav-icon"><i class="menu_icon_mobile ion-navicon-round"></i></div>
+	<section id="contactContainer">
+		<div class="titleDiv">
+			<h1>Want to get in touch? Shoot me an email</h1>
+			<h2>Jorge Eduardo Sosa</h2>
+			<h3>jesa.webdesign@gmail.com</h3>
+		</div>
+		<div class="featuresContainer">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-6">
+						<div class="featureCont">
+							<a href="https://github.com/jorgeduardos" target="_blank"><i class="ion-social-github featuresIcon">GitHub</i>
+							<p class="featuresP">github.com/jorgeduardos</p></a>
+						</div>
+					</div>
+					<div class="col-xs-6">
+						<div class="featureCont">
+							<a href="https://codepen.io/jorgeduardo/" target="_blank"><i class="ion-social-codepen featuresIcon">CodePen</i>
+							<p class="featuresP">codepen.io/jorgeduardo</p></a>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-xs-6">
+						<div class="featureCont">
+							<a href="https://www.linkedin.com/in/jorge-sosa-5953a0141/" target="_blank"><i class="ion-social-linkedin featuresIcon">LinkedIn</i>
+							<p class="featuresP">linkedin.com/in/jorge-sosa</p></a>
+						</div>
+					</div>
+					<div class="col-xs-6">
+						<div class="featureCont">
+							<a href="resume.pdf" target="_blank"><i class="ion-document-text featuresIcon">Resume</i>
+							<p class="featuresP">download</p></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> 
+	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+	<script type="text/javascript">
+		var menuOpen = false;
+		$("#menuIcon").click(function(){
+			if(!menuOpen){
+				$("#menuIcon i").removeClass("ion-android-menu");
+				$("#menuIcon i").addClass("ion-android-close");
+				$("#navBar").show( "blind", 1000);menuOpen = true;
+			}else{
+				$("#menuIcon i").removeClass("ion-android-close");
+				$("#menuIcon i").addClass("ion-android-menu");
+				$("#navBar").hide( "blind", 1000);menuOpen = false;
+		}});
+		$(".menu_icon_mobile").on("click", function(){
+			if($(this).hasClass("ion-navicon-round")){
+				$(this).removeClass("ion-navicon-round");
+				$(this).addClass("ion-close-round").show()
+				$(".mobile-nav").show("blind");
+			}else{
+				$(this).addClass("ion-navicon-round");
+				$(this).removeClass("ion-close-round");
+				$(".mobile-nav").hide("blind");
+			}
+		});</script>
+</body>
+</html>

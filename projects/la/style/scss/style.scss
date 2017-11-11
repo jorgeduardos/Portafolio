@@ -1,0 +1,174 @@
+// Color palet
+
+$main_color: #f39c12;
+
+// Fonts
+
+$main_font: 'Fira Sans', sans-serif;;
+$font_weight: 300;
+$font_size: 1.1em;
+
+*, body{
+	margin: 0;
+    padding: 0; 
+    box-sizing: border-box;
+    font-family: $main_font;
+	font-size: $font_size;
+	overflow-x: hidden;
+	// overflow-y: hidden;
+}
+
+
+//scrollbar
+
+body::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 8px rgba(0,0,0,0.3);
+	background-color: #F5F5F5;
+}
+
+body::-webkit-scrollbar
+{
+	width: 10px;
+	background-color: #F5F5F5;
+}
+
+body::-webkit-scrollbar-thumb
+{
+	background-color: $main_color;
+	background-clip: padding-box;
+	border: 3px solid rgba(0, 0, 0, 0);
+	 // -webkit-box-shadow: inset -3px -3px 0px rgba(0, 0, 0, 0.05), inset 3px 3px 0px rgba(0, 0, 0, 0.05);
+}
+
+/******************* NAVBAR ***********************/
+
+#navBar{
+	text-align: center;
+	position: fixed;
+	width: 100%;
+	z-index: 1000;
+	background-color: #fff !important;
+	height: 50px;
+	// display: none;
+	overflow-y: hidden;
+	box-shadow: 2px 3px 5px #888888;
+	ul{
+		li{
+			display: inline-block;
+			padding-right: 15px;
+			padding-left: 15px;
+			padding-top: 10px;
+			img{
+				height: 30px;
+			}
+			a{
+				position: relative;
+				text-decoration: none;
+				color: $main_color;
+				cursor: pointer;
+			}
+			.bAcross:before{
+				content: "";
+				position: absolute;
+				height: 1px;
+				width: 100%;
+				bottom: 0%;
+				background-color: $main_color;
+				visibility: hidden;
+				transform: scaleX(0);
+				transition: all 0.25s ease-in-out 0s;
+			}
+			a:hover:before{
+				visibility: visible;
+				transform: scaleX(1);
+			}
+		}
+	}
+}
+
+/******************* CONTENT ***********************/
+
+#laContainer{
+	margin-top: 50px;
+	text-align: center;
+	background-color: #ecf0f1;
+	overflow: hidden;
+	#description{
+		h1{
+			font-weight: 700;
+			font-size: 4em;
+			overflow: hidden;
+			position: relative;
+			padding-bottom: 15px;
+		}
+		h1:after{
+			content: "";
+			position: absolute;
+			height: 5px;
+			width: 45px;
+			background-color: $main_color;
+			bottom: 0;
+			right: 49%;
+			
+		}
+		p{
+			margin-top: 15px;
+			font-size: 1.5em;
+		}
+		margin: auto;
+	}
+	#muckup{
+		margin: auto;
+		height: auto;
+		width: 80vw;
+		margin-top: -70px;
+		margin-left: -50px;
+	}
+	#entire{
+		margin-top: 50px;
+		width: 80%;
+		height: auto;
+		border-radius: 5px;
+		box-shadow: 5px 5px 3px #888888;
+	}
+
+	h2{
+		margin-top: 70px;
+		margin-bottom: 40px;
+		padding-bottom: 20px;
+		overflow: hidden;
+		position: relative;
+	}
+	h2:after{
+		content: "";
+		position: absolute;
+		height: 5px;
+		width: 45px;
+		background-color: $main_color;
+		bottom: 0;
+		right: 49%;
+	}
+	#iphoneMuckup{
+		width: 68vw;
+		height: auto;
+		margin: auto;
+		padding-bottom: 5px;
+	}
+	.nextContainer{
+		// width: 220px;
+		font-weight: lighter;
+		text-align: right;
+		margin-top: -50px;
+		padding-right: 40px;
+		font-size: 2.2em;
+		// padding-bottom: 40px;
+		// float: right;
+		cursor: default;
+		.ion-android-arrow-dropright-circle{
+			color: $main_color;
+			cursor: pointer;
+			padding-left: 10px;
+		}
+	}
+}

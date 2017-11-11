@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Jesa Web Design</title>
+	<link href="https://fonts.googleapis.com/css?family=Fira+Sans:300,400,700" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+	<link rel="stylesheet" href="style/css/style.css">
+	<link rel="stylesheet" href="style/css/querys.css">
+</head>
+<body>
+	<nav id="navBar">
+		<ul>
+			<li><a class="bAcross" href="../../index.html#sectionWho" id="whoNav">Who</a></li>
+			<li><a class="bAcross" href="../../index.html#sectionWork" id="whatNav">Projects</a></li>
+			<li><a href="../../index.html"><img src="../../resources/style/css/images/logo/logoNavBar.png" alt="JESA logo"></a></li>
+			<li><a class="bAcross" href="#">About</a></li>
+			<li><a class="bAcross" href="../../contact/contact.html">Contact</a></li>
+		</ul>
+	</nav>
+	<nav class="mobile-nav">
+		<ul>
+			<li  id="mobile-nav-upper"><img id="logoNavbar" src="style/css/imgs/logoNavBar.png" alt="JESA logo"></li>
+			<li id="whoNav-mob"><a href="../index.html#sectionWho">Who</a></li>
+			<li id="whatNav-mob"><a href="../index.html#sectionWork">Projects</a></li>
+			<li><a  href="contact/contact.html">Contact</a></li>
+		</ul>
+	</nav> 
+	<div id="mobile-nav-icon"><i class="menu_icon_mobile ion-navicon-round"></i></div>
+	<section id="laContainer">
+		<div id="description" class="container">
+			<h1 class="title">Language Ambassadors, LLC.</h1>
+			<p>
+				Language Ambassadors is a interpratation and translation company, with a select group of seasoned professionals who will assist you in your multilingual communication needs. The feel and the colors of the website was inspired by the company's logo. The website is completely responsive and it's simple design makes it easy to read and understand.
+			</p>
+			<img src="style/css/imgs/laMuckup.png" id="muckup" alt="LA muckup">
+		</div>
+		<img id="entire" src="style/css/imgs/big_img.jpg" alt="LA entire website">
+		<h2>Full Repsonsive Design</h2>
+		<img  id="iphoneMuckup" src="style/css/imgs/iPhone_9.png" alt="LA iphone muckup">
+		<div class="nextContainer">Next Project <a href="../travesia/travesia.html"><i class="ion-android-arrow-dropright-circle"></i></a></div>
+	</section>
+
+
+
+<!-- http://www.briannathanhartwell.com/ -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> 
+	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+	<script type="text/javascript">
+		var menuOpen = false;
+		$("#menuIcon").click(function(){
+			if(!menuOpen){
+				$("#menuIcon i").removeClass("ion-android-menu");
+				$("#menuIcon i").addClass("ion-android-close");
+				$("#navBar").show( "blind", 1000);menuOpen = true;
+			}else{
+				$("#menuIcon i").removeClass("ion-android-close");
+				$("#menuIcon i").addClass("ion-android-menu");
+				$("#navBar").hide( "blind", 1000);menuOpen = false;
+		}});
+		$(".menu_icon_mobile").on("click", function(){
+			if($(this).hasClass("ion-navicon-round")){
+				$(this).removeClass("ion-navicon-round");
+				$(this).addClass("ion-close-round").show()
+				$(".mobile-nav").show("blind");
+			}else{
+				$(this).addClass("ion-navicon-round");
+				$(this).removeClass("ion-close-round");
+				$(".mobile-nav").hide("blind");
+			}
+		});</script>
+
+</body>
+</html>
+
+

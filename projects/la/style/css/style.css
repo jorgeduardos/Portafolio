@@ -1,0 +1,206 @@
+*, body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Fira Sans", sans-serif;
+  font-size: 1.1em;
+  overflow-x: hidden; }
+
+body::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.3);
+  background-color: #F5F5F5; }
+
+body::-webkit-scrollbar {
+  width: 10px;
+  background-color: #F5F5F5; }
+
+body::-webkit-scrollbar-thumb {
+  background-color: #f39c12;
+  background-clip: padding-box;
+  border: 3px solid transparent; }
+
+/******************* NAVBAR ***********************/
+#navBar {
+  text-align: center;
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+  background-color: #fff !important;
+  height: 50px;
+  overflow-y: hidden;
+  box-shadow: 2px 3px 5px #888888; }
+  #navBar ul li {
+    display: inline-block;
+    padding-right: 15px;
+    padding-left: 15px;
+    padding-top: 10px; }
+    #navBar ul li img {
+      height: 30px; }
+    #navBar ul li a {
+      position: relative;
+      text-decoration: none;
+      color: #f39c12;
+      cursor: pointer; }
+    #navBar ul li .bAcross:before {
+      content: "";
+      position: absolute;
+      height: 1px;
+      width: 100%;
+      bottom: 0%;
+      background-color: #f39c12;
+      visibility: hidden;
+      transform: scaleX(0);
+      transition: all 0.25s ease-in-out 0s; }
+    #navBar ul li a:hover:before {
+      visibility: visible;
+      transform: scaleX(1); }
+/****************** MOBILE NAV*/
+.mobile-nav {
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  background-color: white;
+  text-align: center;
+  z-index: 9999;
+  display: none;
+  box-shadow: 15px 0 15px  #8A8A8A; }
+
+.mobile-nav ul {
+  text-align: center;
+  width: inherit; }
+
+.mobile-nav li {
+  display: block;
+  width: 94%;
+  padding: 15px;
+  background-color: #f39c12;
+  margin: auto;
+  margin-top: 7px;
+  border-radius: 5px;
+  cursor: pointer; }
+
+.mobile-nav a {
+  text-decoration: none;
+  color: #000; }
+
+.mobile-nav li:hover {
+  background-color: #f7be63; }
+
+#mobile-nav-upper {
+  background-color: white;
+  font-size: 130%;
+  text-align: left;
+  pointer-events: none; }
+
+#logoNavbar {
+  margin-left: 2px;
+  margin-right: 2px;
+  height: 30px; }
+
+#mobile-nav-icon {
+  background-color: #f39c12;
+  opacity: 0.8;
+  width: 30px;
+  height: 25px;
+  position: fixed;
+  right: 7%;
+  top: 3%;
+  z-index: 10000;
+  text-align: center;
+  display: none;
+  border-radius: 5px;
+  overflow: hidden; }
+  #mobile-nav-icon i {
+    overflow: hidden;
+    font-size: 1.5em;
+    font-weight: lighter; }
+
+#menuIcon {
+  height: 30px;
+  width: 30px;
+  position: fixed;
+  right: 2%;
+  top: 1.5%;
+  background-color: #f39c12;
+  opacity: 0.7;
+  z-index: 10000;
+  text-align: center;
+  overflow: hidden;
+  transition: all 0.5s linear;
+  border-radius: 3px; }
+  #menuIcon i {
+    position: relative;
+    font-size: 1.8em; }
+
+#menuIcon:hover {
+  opacity: 1; }
+
+/******************* CONTENT ***********************/
+#laContainer {
+  margin-top: 50px;
+  text-align: center;
+  background-color: #ecf0f1;
+  overflow: hidden; }
+  #laContainer #description {
+    margin: auto; }
+    #laContainer #description h1 {
+      font-weight: 700;
+      font-size: 4em;
+      overflow: hidden;
+      position: relative;
+      padding-bottom: 15px; }
+    #laContainer #description h1:after {
+      content: "";
+      position: absolute;
+      height: 5px;
+      width: 45px;
+      background-color: #f39c12;
+      bottom: 0;
+      right: 49%; }
+    #laContainer #description p {
+      margin-top: 15px;
+      font-size: 1.5em; }
+  #laContainer #muckup {
+    margin: auto;
+    height: auto;
+    width: 80vw;
+    margin-top: -70px;
+    margin-left: -50px; }
+  #laContainer #entire {
+    margin-top: 50px;
+    width: 80%;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 5px 5px 3px #888888; }
+  #laContainer h2 {
+    margin-top: 70px;
+    margin-bottom: 40px;
+    padding-bottom: 20px;
+    overflow: hidden;
+    position: relative; }
+  #laContainer h2:after {
+    content: "";
+    position: absolute;
+    height: 5px;
+    width: 45px;
+    background-color: #f39c12;
+    bottom: 0;
+    right: 49%; }
+  #laContainer #iphoneMuckup {
+    width: 68vw;
+    height: auto;
+    margin: auto;
+    padding-bottom: 5px; }
+  #laContainer .nextContainer {
+    font-weight: lighter;
+    text-align: right;
+    margin-top: -50px;
+    padding-right: 40px;
+    font-size: 2.2em;
+    cursor: default; }
+    #laContainer .nextContainer .ion-android-arrow-dropright-circle {
+      color: #f39c12;
+      cursor: pointer;
+      padding-left: 10px; }
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,178 @@
+/* Big tablet to 1200px (widths smaller taht the 1140px row) */
+@media only screen and (max-width: 1199px) {
+    #menuIcon{
+        top: 1%;
+    }
+
+    .who .whoInner{
+        background-position: -150px 100px;
+    }
+
+    .who .whoInner .whoWrapper h1 {
+        font-size: 2.3em;
+    }
+    .who #aboutMe .container-fluid div p {
+        font-size: 1.9em; 
+        line-height: 45px;
+    }
+    .who #aboutMe .container-fluid #aboutMePic {
+        background-size: cover;
+        background-position: 45%;
+    }
+    .who #aboutMe .container-fluid #aboutPCont {
+        padding-top: 150px;
+    }
+    /*.myWork .container .row .item{
+        height: 50%;
+    }
+*/
+}
+
+
+/* Small tablet to big tablet: from 768px to 1023px */
+@media only screen and (max-width: 1023px) {
+   #menuIcon{
+        top: 1.5%;
+    }
+    .who .whoInner .whoWrapper h1 {
+        font-size: 2.1em;
+    }
+    .who #aboutMe .container-fluid #aboutPCont {
+        padding-top: 20px;
+    }
+    .who #aboutMe .container-fluid div p{
+        font-size: 1.5em;
+    }
+
+    .myWork .container .row .item{
+        height: 50%;
+    }
+
+
+}
+
+
+
+/* Small phones to small tablets: from 481px to 767px */
+@media only screen and (max-width: 767px) {
+    body::-webkit-scrollbar{
+        display: none;
+    }
+    #mobile-nav-icon{
+        display: block;
+    }
+    #menuIcon{
+        display: none;
+    }
+    header .headerInner .logoWrapper{
+        width: 300px;
+        height: 300px;
+    }
+    .who .whoInner{
+        background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../css/images/profilePic.jpg");
+        background-position: -240px 0px;
+        margin-top: 70px;
+    }
+    .who .whoInner .whoWrapper{
+        left: -30%;
+        top: -10%;
+        width: 50vw;
+    }
+    .who .whoInner .whoWrapper h1{
+        font-size: 1.3em;
+    }
+    .who .whoInner .whoArrowDownWrap{
+        width: 30%
+    }
+    .who .whoInner .whoArrowRightWrap div{
+        top: 55%;
+    }
+    .who .whoInner .whoArrowDownWrap p, .who .whoInner .whoArrowRightWrap div span{
+        font-size: 15px;
+    }
+     .who .whoInner .whoArrowRightWrap div span{
+        margin-left: 39px;
+     }
+    .who .whoInner .whoArrowDownWrap i{
+        font-size: 1.5em;
+        bottom: 40%;
+    }
+    .who .whoInner .whoArrowRightWrap div i{
+        top: -10%;
+        font-size: 0.9em;
+    }
+    .who #aboutMe .container-fluid div p{
+        font-size: 0.9em;
+        line-height: initial;
+    }
+    .who #aboutMe .container-fluid #aboutPCont:after{
+        left: -2px;
+        border-top: 6px solid transparent;
+        border-left: 12px solid #f39c12;
+    }
+    .who #aboutMe .container-fluid #aboutPCont{
+        border-left: 5px solid $main_color;
+    }
+
+    @keyframes arrowDown{
+        0%{
+            bottom: 40%;
+        }
+        50%{
+            bottom: 30%;
+        }
+        100%{
+            bottom: 40%;
+        }
+    }
+    @keyframes arrowRight {
+      0% {
+        right: 10%; }
+      50% {
+        right: 7%; }
+      100% {
+        right: 10%; } 
+    }
+
+    .myWork .container .row .item a .itemInInner{
+        margin-bottom: -3em;
+    }
+    
+}
+
+
+
+/* Small phones: from 0 to 480px */
+@media only screen and (max-width: 320px) {
+    .who .whoInner .whoWrapper{
+        top: 10%;
+    }  
+    .who .whoInner{
+        margin-top: 55px;
+        background-position: -80px 0px;
+        background-size: cover;
+    }
+    .who #aboutMe .container-fluid #aboutPCont{
+        padding-top: 15px;
+        padding-left: 20px;
+    }
+    .who #aboutMe .container-fluid div p{
+        font-size: 0.75em;
+    }
+
+}
+
+@media only screen and (max-height: 480px) {
+    .who .whoInner{
+        background-position: -30px 0px;
+    }
+    .who .whoInner .whoWrapper{
+        top: 30%;
+    }
+    .who .whoInner .whoArrowDownWrap{
+        bottom: -5%;
+    }
+    .who #aboutMe .container-fluid div p{
+        font-size: 0.65em;
+    }
+}
