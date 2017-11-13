@@ -39,6 +39,10 @@ function scrollDown(){
         $('html, body').animate({
             scrollTop: $(scrollToElement).offset().top
         }, 900,function(){
+        	$("#menuIcon i").removeClass("ion-android-menu");
+			$("#menuIcon i").addClass("ion-android-close");
+			$("#navBar").show( "blind", 1000);
+			menuOpen = true;
         	if(scrollCurrentPos == 0){
             	currentPos = 0;
             }else if(scrollCurrentPos == 1){
