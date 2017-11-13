@@ -176,3 +176,9 @@
         font-size: 0.65em;
     }
 }
+
+@media only screen and (max-height: 633px){
+    .who .whoInner .whoWrapper{
+        top: 0;
+    }
+}
