@@ -2,6 +2,7 @@ var scrollCurrentPos = 0;
 var scrolling = false;
 var currentPos = 0;
 var menuOpen = false;
+var isFirefox = typeof InstallTrigger !== 'undefined';
 
 ////////////////////// functions
 
@@ -62,29 +63,31 @@ $(document).ready(function(){
 	    }
 	}
 
-	$(document).bind('DOMMouseScroll', function(e){
-	   	if(currentPos == 2){
-			$("html").css("overflowY", "hidden");
-		}
-	    else if(e.originalEvent.wheelDelta < 0) {
-	        scrollDown();
-	    }else {
-	        scrollUp();     
-	    }
-	    return false;
-	});
+	if(!isFirefox){
+		$(document).bind('DOMMouseScroll', function(e){
+		   	if(currentPos == 2){
+				$("html").css("overflowY", "hidden");
+			}
+		    else if(e.originalEvent.wheelDelta < 0) {
+		        scrollDown();
+		    }else {
+		        scrollUp();     
+		    }
+		    return false;
+		});
 
-	$(document).bind('mousewheel', function(e){
-		if(currentPos == 2){
-			$("html").css("overflowY", "hidden");
-		}
-	    else if(e.originalEvent.wheelDelta < 0) {
-	        scrollDown();
-	    }else {
-	        scrollUp();     
-	    }
-	    return false;
-	});
+		$(document).bind('mousewheel', function(e){
+			if(currentPos == 2){
+				$("html").css("overflowY", "hidden");
+			}
+		    else if(e.originalEvent.wheelDelta < 0) {
+		        scrollDown();
+		    }else {
+		        scrollUp();     
+		    }
+		    return false;
+		});
+	}
 
 
 	 $(".js--travesia-item").css("left", $(".item2").width()/2 - $(".js--travesia-item").width()/2);
