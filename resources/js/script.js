@@ -253,7 +253,7 @@ $(document).ready(function(){
 		 currentPos = 1;
 	});
 
-	$("#menuIcon").on("click", function(){
+	$("#menuIcon").click(function(){
 		if(!menuOpen){
 			$("#menuIcon i").removeClass("ion-android-menu");
 			$("#menuIcon i").addClass("ion-android-close");
@@ -286,6 +286,3 @@ $(document).ready(function(){
 	};
 
 })
-
-
-
