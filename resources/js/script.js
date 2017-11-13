@@ -253,7 +253,7 @@ $(document).ready(function(){
 		 currentPos = 1;
 	});
 
-	$("#menuIcon").click(function(){
+	$("#menuIcon").on("click", function(){
 		if(!menuOpen){
 			$("#menuIcon i").removeClass("ion-android-menu");
 			$("#menuIcon i").addClass("ion-android-close");
