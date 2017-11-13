@@ -1,3 +1,15 @@
+
+/* Big tablet to 1200px (widths smaller taht the 1140px row) */
+@media only screen and (max-width: 1199px) {
+
+}
+
+
+/* Small tablet to big tablet: from 768px to 1023px */
+@media only screen and (max-width: 1023px) {
+
+}
+
 @media only screen and (max-width: 767px) {
     body::-webkit-scrollbar{
         display: none;
@@ -8,10 +20,72 @@
     #menuIcon{
         display: none;
     }
+    #contactContainer{
+        padding-top: 20px;
+    }#contactContainer .titleDiv h1{
+        font-size: 2em;
+    }
+    #contactContainer .titleDiv h1:after{
+        right: 40%;
+        height: 6px;
+    }
+    #contactContainer .titleDiv h2{
+        font-size: 2.4em;
+    }
+    #contactContainer .featuresContainer{
+        margin-top: 10px;
+    }
+    #contactContainer .featuresContainer .featureCont a{
+        font-size: 0.7em;
+    }
+    #contactContainer .featuresContainer .row .col-xs-6{
+        padding-top: 0;
+    }
+    #contactContainer .featuresContainer .row{
+        margin-bottom: 35px;
+    }
+        .container{
+        padding-top: 25px;
+    }
+    #contactContainer .titleDiv h3{
+        font-size: 1.3em;
+    }
 }
 
-/*@media only screen and (max-width: 320px) {
-    #contactContainer .titleDiv h1:after{
-        right: 42%;
+/* Small phones: from 0 to 480px */
+@media only screen and (max-width: 320px) {
+    #contactContainer{
+        padding-top: 10px;
     }
-}*/
+    #contactContainer .titleDiv h1{
+        font-size: 2em;
+        padding-bottom: 20px;
+    }
+    #contactContainer .titleDiv h1:after{
+        height: 5px;
+        right: 38%;
+    }
+    #contactContainer .titleDiv h2{
+        font-size: 2em;
+    }
+    #contactContainer .titleDiv h3{
+        font-size: 1.2em;
+    }
+    #contactContainer .featuresContainer{
+        margin-top: 20px;
+    }
+    #contactContainer .featuresContainer .featureCont a .featuresIcon{
+        font-size: 1em;
+    }
+    #contactContainer .featuresContainer .featureCont a .featuresP{
+        font-size: 0.5em;
+    }
+    #contactContainer .featuresContainer .row .col-xs-6{
+        padding-top: 0px;
+    }
+    #contactContainer .featuresContainer .row{
+        margin-bottom: 15px;
+    }
+
+
+}

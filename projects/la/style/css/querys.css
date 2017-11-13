@@ -26,9 +26,9 @@
         margin-top: 0;
     }
     #laContainer #muckup{
-        width: 600px;
+        width: 500px;
         margin-top: 0;
-        margin-left: -120px;
+        margin-left: -90px;
     }
     #laContainer #description h1{
         font-size: 3em;
@@ -39,17 +39,20 @@
         right: 45%;
     }
     #laContainer h2{
-        font-size: 3em;
+        font-size: 2.5em;
     }
     #laContainer h2:after{
         right: 45%;
     }
     #laContainer #iphoneMuckup{
         width: 500px;
-        margin-left: -40px;
+        margin-left: -60px;
     }
     #laContainer .nextContainer{
         margin-top: 0px;
+        padding-right: 10px;
+        font-size: 1.6em;
+
     }
 }
 
@@ -57,10 +60,31 @@
 
 /* Small phones: from 0 to 480px */
 @media only screen and (max-width: 320px) {
-
-
+    #laContainer #description h1{
+        font-size: 2.5em;
+    }
+    #laContainer #description h1:after{
+        right: 42%;
+    }
+    #laContainer #description p{
+        font-size: 1.3em;
+    }
+    #laContainer #muckup{
+        width: 400px;
+        margin-left: -60px;
+    }
+    #laContainer h2{
+        font-size: 2.2em;
+    }
+    #laContainer #iphoneMuckup{
+        width: 400px;
+    }
+    #laContainer #description h1:after, #laContainer h2:after{
+        right: 42%;
+    }
+    #laContainer .nextContainer{
+        font-size: 1.3em;
+        padding-right: 10px;
+    }
 }
 
-@media only screen and (max-height: 480px) {
-
-}
