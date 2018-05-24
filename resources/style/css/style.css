@@ -17,7 +17,7 @@ body::-webkit-scrollbar {
 body::-webkit-scrollbar-thumb {
   background-color: #f39c12;
   background-clip: padding-box;
-  border: 3px solid transparent; }
+  border: 3px solid rgba(0, 0, 0, 0); }
 
 /******************* NAVBAR ***********************/
 #navBar {
@@ -81,7 +81,7 @@ body::-webkit-scrollbar-thumb {
   position: fixed;
   top: 0;
   width: 100vw;
-  background-color: white;
+  background-color: #FFFCF9;
   text-align: center;
   z-index: 9999;
   display: none;
@@ -109,7 +109,7 @@ body::-webkit-scrollbar-thumb {
   background-color: #f7be63; }
 
 #mobile-nav-upper {
-  background-color: white;
+  background-color: #FFFCF9;
   font-size: 130%;
   text-align: left;
   pointer-events: none; }
