@@ -502,15 +502,32 @@ header{
 	height: 100vh;
 	text-align: center;
 	position: relative;
-	padding: 80px;
+	padding: 30px;
 	.grid-container{
 		display: grid;
 		grid-template-columns: 50% 50%;
-		grid-template-row: 50% 50%;
+		grid-template-rows: 50% 50%;
+		grid-column-gap: 10px;
+		grid-row-gap: 10px;
 		height: 100%;
 		width: 100%;
-		.item{	
-			background-color: 
+		overflow: hidden;
+		.item{
+			background-size: cover;
+			background-repeat: no-repeat;
+			background-position: center;
+			filter: grayscale(100%);
+			transition: 1s;
+			height: 100%;
+		}
+		.item:hover{
+			filter: grayscale(0%);
+		}
+		.item1{	
+			background-image: url('../css/images/work/LA/laHome.PNG');
+		}
+		.item2{
+			background-image: url('../css/images/work/travesia.PNG');
 		}
 	}
 	// .container{
