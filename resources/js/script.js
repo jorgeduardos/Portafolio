@@ -94,9 +94,6 @@ $(document).ready(function(){
 	}
 
 
-	 $(".js--travesia-item").css("left", $(".item2").width()/2 - $(".js--travesia-item").width()/2);
-
-
 	$(".whoArrowDownWrap p").click(function(){
 		$('html, body').animate({scrollTop: $('.myWork').offset().top}, 1000);
 		currentPos = 3;

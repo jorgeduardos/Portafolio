@@ -365,28 +365,106 @@ header {
   height: 100vh;
   text-align: center;
   position: relative;
-  padding: 30px; }
+  padding: 10px; }
   .myWork .grid-container {
     display: grid;
     grid-template-columns: 50% 50%;
     grid-template-rows: 50% 50%;
-    grid-column-gap: 10px;
-    grid-row-gap: 10px;
+    grid-column-gap: 2px;
+    grid-row-gap: 2px;
     height: 100%;
     width: 100%;
     overflow: hidden; }
+    .myWork .grid-container a {
+      text-decoration: none;
+      color: #fff; }
+    .myWork .grid-container .black-bkg {
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      background-color: #000;
+      opacity: 0.9; }
+    .myWork .grid-container .black-bkg:hover {
+      opacity: 0; }
     .myWork .grid-container .item {
+      transition: 1s;
+      height: 100%;
+      position: relative;
+      overflow: hidden; }
+      .myWork .grid-container .item .itemInInner {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 25%;
+        opacity: 1;
+        z-index: 3;
+        text-align: left;
+        overflow: hidden;
+        margin-bottom: -5em;
+        background: transparent; }
+        .myWork .grid-container .item .itemInInner h3 {
+          padding-left: 50px;
+          position: relative;
+          margin: 0;
+          font-size: 1.8em;
+          overflow: hidden;
+          padding-bottom: 10px;
+          margin-top: 25px; }
+        .myWork .grid-container .item .itemInInner h3:before {
+          content: "";
+          position: absolute;
+          height: 5px;
+          width: 10%;
+          bottom: 0%;
+          background-color: #f39c12; }
+        .myWork .grid-container .item .itemInInner p {
+          padding-left: 50px;
+          margin-top: 5px;
+          opacity: 0; }
+      .myWork .grid-container .item .itemNumber {
+        position: absolute;
+        border: 5px solid #f39c12;
+        height: 80px;
+        width: 80px;
+        border-radius: 160px;
+        font-size: 2.8em;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        margin: auto;
+        transform: scale(1);
+        z-index: 3;
+        opacity: 1;
+        overflow: hidden;
+        filter: grayscale(0%) !important; }
+    .myWork .grid-container .item:hover .itemInInner {
+      margin-bottom: 0em;
+      background: rgba(17, 17, 18, 0.8); }
+    .myWork .grid-container .item:hover .itemInInner p {
+      opacity: 1; }
+    .myWork .grid-container .item:hover .itemNumber {
+      transform: scale(1.3);
+      opacity: 0; }
+    .myWork .grid-container .item .itemInInner, .myWork .grid-container .item p, .myWork .grid-container .item .itemNumber, .myWork .grid-container .black-bkg, .myWork .grid-container .bkg {
+      transition: all 0.5s ease-in; }
+    .myWork .grid-container .bkg {
+      position: absolute;
+      height: 100%;
+      width: 100%;
       background-size: cover;
       background-repeat: no-repeat;
       background-position: center;
-      filter: grayscale(100%);
-      transition: 1s;
-      height: 100%; }
-    .myWork .grid-container .item:hover {
+      filter: grayscale(100%); }
+    .myWork .grid-container .item:hover > .bkg {
       filter: grayscale(0%); }
-    .myWork .grid-container .item1 {
+    .myWork .grid-container .bkg1 {
       background-image: url("../css/images/work/LA/laHome.PNG"); }
-    .myWork .grid-container .item2 {
+    .myWork .grid-container .bkg2 {
       background-image: url("../css/images/work/travesia.PNG"); }
+    .myWork .grid-container .bkg3 {
+      background-image: url("../css/images/work/coin-watch.PNG"); }
+    .myWork .grid-container .bkg4 {
+      background-image: url("../css/images/work/three-balloons.PNG"); }
 
 /*# sourceMappingURL=style.css.map */
