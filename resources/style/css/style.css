@@ -200,8 +200,7 @@ header {
   width: 200vw;
   position: relative;
   text-align: center;
-  color: #fff;
-  /******************** ABOUT **********************/ }
+  color: #fff; }
   .who .whoInner {
     margin-top: 100px;
     height: 80vh;
@@ -316,49 +315,24 @@ header {
     right: 3%; }
   100% {
     right: 10%; } }
-  .who #aboutMe {
-    width: 100vw;
-    height: 100vh;
+/******************** ABOUT **********************/
+#aboutMe {
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  background-color: black;
+  opacity: 0.9;
+  z-index: 99999;
+  top: 0; }
+  #aboutMe .icon-container {
+    font-size: 2em;
     position: absolute;
-    left: 100vw;
-    top: 0;
-    text-align: center;
-    color: #000;
-    background-color: #ecf0f1; }
-    .who #aboutMe .container-fluid {
-      padding-top: 50px;
-      height: 100%;
-      text-align: center; }
-      .who #aboutMe .container-fluid div {
-        float: left;
-        height: 100%;
-        width: 50%;
-        overflow: hidden; }
-        .who #aboutMe .container-fluid div p {
-          font-size: 2em;
-          text-align: left; }
-      .who #aboutMe .container-fluid #aboutMePic {
-        background-image: url("../css/images/aboutPic.jpg");
-        background-repeat: no-repeat;
-        background-size: 100%;
-        background-position: 0 65%; }
-      .who #aboutMe .container-fluid #aboutPCont {
-        position: relative;
-        z-index: 1;
-        border-left: 10px solid #f39c12;
-        padding-left: 25px;
-        padding-top: 30px; }
-      .who #aboutMe .container-fluid #aboutPCont:after {
-        position: absolute;
-        content: "";
-        z-index: 10;
-        width: 0;
-        height: 0;
-        left: -8px;
-        top: 50%;
-        border-top: 12px solid transparent;
-        border-left: 24px solid #f39c12;
-        border-bottom: 12px solid transparent; }
+    right: 80px;
+    top: 15px;
+    opacity: 1; }
+  #aboutMe .icon-container i {
+    color: #FFFFFF;
+    cursor: pointer; }
 
 /******************** WORK **********************/
 .myWork {

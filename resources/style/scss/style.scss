@@ -433,67 +433,90 @@ header{
 			right: 10%;
 		}
 	}
+}
 
 /******************** ABOUT **********************/
 
-	#aboutMe{
-		width: 100vw;
-		height: 100vh;
-		position: absolute;
-		left: 100vw;
-		top: 0;
-		text-align: center;
-		color: #000;
-		background-color: #ecf0f1;
-		// padding-top: 50px;
-		.container-fluid{
-			padding-top: 50px;
-			height: 100%;
-			text-align: center;
-			div{
-				float: left;
-				height: 100%;
-				width: 50%;
-				overflow: hidden;
-				// img{
-				// 	width: 100%;
-				// 	height: auto;
-
-
-				// }
-				p{
-					font-size: 2em;
-					text-align: left;
-				}
-			}
-			#aboutMePic{
-				background-image: url("../css/images/aboutPic.jpg");
-				background-repeat: no-repeat;
-				background-size: 100%;
-				background-position: 0 65%;
-			}
-			#aboutPCont{
-				position: relative;
-				z-index: 1;
-				border-left: 10px solid $main_color;
-				padding-left: 25px;
-				padding-top: 30px;
-			}
-			#aboutPCont:after{
-				position: absolute;
-				content: "";
-				z-index: 10;
-				width: 0;
-				height: 0;
-				left: -8px;
-				top: 50%;
-				border-top: 12px solid transparent;
-				border-left: 24px solid $main_color;
-				border-bottom: 12px solid transparent;
-			}
-		}
+#aboutMe{
+	position: fixed;
+	height: 100vh;
+	width: 100vw;
+	background-color: black;
+	opacity: 0.9;
+	z-index: 99999;
+	top: 0;
+	.icon-container {
+	    font-size: 2em;
+	    position: absolute;
+	    right: 80px;
+	    top: 15px;
+	    opacity: 1; 
+	}
+   	.icon-container i {
+      color: #FFFFFF;
+      cursor: pointer; 
 	}
 }
+
+
+// 	#aboutMe{
+// 		width: 100vw;
+// 		height: 100vh;
+// 		position: absolute;
+// 		left: 100vw;
+// 		top: 0;
+// 		text-align: center;
+// 		color: #000;
+// 		background-color: #ecf0f1;
+// 		// padding-top: 50px;
+// 		.container-fluid{
+// 			padding-top: 50px;
+// 			height: 100%;
+// 			text-align: center;
+// 			div{
+// 				float: left;
+// 				height: 100%;
+// 				width: 50%;
+// 				overflow: hidden;
+// 				// img{
+// 				// 	width: 100%;
+// 				// 	height: auto;
+
+
+// 				// }
+// 				p{
+// 					font-size: 2em;
+// 					text-align: left;
+// 				}
+// 			}
+// 			#aboutMePic{
+// 				background-image: url("../css/images/aboutPic.jpg");
+// 				background-repeat: no-repeat;
+// 				background-size: 100%;
+// 				background-position: 0 65%;
+// 			}
+// 			#aboutPCont{
+// 				position: relative;
+// 				z-index: 1;
+// 				border-left: 10px solid $main_color;
+// 				padding-left: 25px;
+// 				padding-top: 30px;
+// 			}
+// 			#aboutPCont:after{
+// 				position: absolute;
+// 				content: "";
+// 				z-index: 10;
+// 				width: 0;
+// 				height: 0;
+// 				left: -8px;
+// 				top: 50%;
+// 				border-top: 12px solid transparent;
+// 				border-left: 24px solid $main_color;
+// 				border-bottom: 12px solid transparent;
+// 			}
+// 		}
+// 	}
+// }
 
 
 /******************** WORK **********************/

@@ -100,19 +100,18 @@ $(document).ready(function(){
 		scrollCurrentPos = 2;
 	});
 
-	$(".whoArrowRightWrap span").click(function(){
-		var whoWidth = ($(".who").width() * -1)/2;
-		$("html").css("overflowY", "hidden");
-		$(".who").animate({marginLeft: whoWidth}, 700, function(){
-			$('#whoNav').removeClass("scale");
-			currentPos = 2;
+
+	//OLD ABOUT SCRIPT
+
+	// $(".whoArrowRightWrap span").click(function(){
+	// 	var whoWidth = ($(".who").width() * -1)/2;
+	// 	$("html").css("overflowY", "hidden");
+	// 	$(".who").animate({marginLeft: whoWidth}, 700, function(){
+	// 		$('#whoNav').removeClass("scale");
+	// 		currentPos = 2;
 			
-		});
-		// $("#menuIcon i").removeClass("ion-android-menu");
-		// $("#menuIcon i").addClass("ion-android-close");
-		// $("#navBar").show( "blind", 1000);
-		// menuOpen = true;
-	});
+	// 	});
+	// });
 
 	$("#whoNav").click(function(){
 		if(currentPos == 0 || currentPos == 3){
