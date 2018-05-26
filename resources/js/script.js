@@ -3,6 +3,7 @@ var scrolling = false;
 var currentPos = 0;
 var menuOpen = false;
 var isFirefox = typeof InstallTrigger !== 'undefined';
+var down = 'down';
 
 ////////////////////// functions
 
@@ -93,6 +94,17 @@ $(document).ready(function(){
 		});
 	}
 
+	//Waypoints
+
+	var waypoints = $('#sectionWork').waypoint({
+		handler: function(direction){
+			if(direction == down){
+				$('.item1').addClass('animated slideInUp');
+			}
+		}, 
+		offset: 200
+	})
+
 
 	$(".whoArrowDownWrap p").click(function(){
 		$('html, body').animate({scrollTop: $('.myWork').offset().top}, 1000);
@@ -100,18 +112,18 @@ $(document).ready(function(){
 		scrollCurrentPos = 2;
 	});
 
+	$(".whoArrowRightWrap span").click(function(){
+		$('#aboutMe').addClass('animated fadeInRightBig').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
+          $(this).removeClass('fadeInRightBig');
+       });
+	});
 
-	//OLD ABOUT SCRIPT
+	$('#aboutMe .icon-container').click(function(){
+       $('#aboutMe').addClass('animated fadeOutRightBig').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
+          $(this).removeClass('animated fadeOutRightBig');
+       });
+    });
 
-	// $(".whoArrowRightWrap span").click(function(){
-	// 	var whoWidth = ($(".who").width() * -1)/2;
-	// 	$("html").css("overflowY", "hidden");
-	// 	$(".who").animate({marginLeft: whoWidth}, 700, function(){
-	// 		$('#whoNav').removeClass("scale");
-	// 		currentPos = 2;
-			
-	// 	});
-	// });
 
 	$("#whoNav").click(function(){
 		if(currentPos == 0 || currentPos == 3){
@@ -177,35 +189,15 @@ $(document).ready(function(){
 	});
 
 	$("#aboutNav").click(function(){
-		if(currentPos == 0 || currentPos == 3){
-			var whoWidth = ($(".who").width() * -1)/2;
-			$('html, body').animate({scrollTop: $('.who').offset().top}, 1000, function(){
-				$("html").css("overflowY", "hidden");
-				$(".who").animate({marginLeft: whoWidth}, 700);
-			});
-		}
-		else if(currentPos == 1){
-			var whoWidth = ($(".who").width() * -1)/2;
-			$("html").css("overflowY", "hidden");
-			$(".who").animate({marginLeft: whoWidth}, 700);
-		}
-		currentPos = 2;
+		$('#aboutMe').addClass('animated fadeInRightBig').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
+          $(this).removeClass('fadeInRightBig');
+       });
 	});
 
 	$("#aboutNav-mob").click(function(){
-		if(currentPos == 0 || currentPos == 3){
-			var whoWidth = ($(".who").width() * -1)/2;
-			$('html, body').animate({scrollTop: $('.who').offset().top}, 1000, function(){
-				$("html").css("overflowY", "hidden");
-				$(".who").animate({marginLeft: whoWidth}, 700);
-			});
-		}
-		else if(currentPos == 1){
-			var whoWidth = ($(".who").width() * -1)/2;
-			$("html").css("overflowY", "hidden");
-			$(".who").animate({marginLeft: whoWidth}, 700);
-		}
-		currentPos = 2;
+		$('#aboutMe').addClass('animated fadeInRightBig').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
+          $(this).removeClass('fadeInRightBig');
+       });
 	});
 
 
