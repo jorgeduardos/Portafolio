@@ -96,15 +96,28 @@ $(document).ready(function(){
 
 	//Waypoints
 
+
 	var waypoints = $('#sectionWork').waypoint({
 		handler: function(direction){
 			if(direction == down){
-				$('.item1').addClass('animated slideInUp');
+				$('.item1').addClass('animated slideInLeft');
+				setTimeout(function(){
+					$('.item2').addClass('animated slideInRight');
+				}, 300);
+				setTimeout(function(){
+					$('.item3').addClass('animated slideInLeft');
+				}, 400);
+				setTimeout(function(){
+					$('.item4').addClass('animated slideInRight');
+				}, 500);
+
 			}
 		}, 
-		offset: 200
+		offset: 800
 	})
 
+
+	// animations
 
 	$(".whoArrowDownWrap p").click(function(){
 		$('html, body').animate({scrollTop: $('.myWork').offset().top}, 1000);

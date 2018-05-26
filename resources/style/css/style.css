@@ -207,6 +207,7 @@ header {
     background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../css/images/profilePic.jpg");
     background-size: cover;
     background-attachment: fixed;
+    background-repeat: no-repeat;
     position: relative;
     overflow-y: hidden; }
     .who .whoInner .whoWrapper {
@@ -341,7 +342,7 @@ header {
   height: 100vh;
   text-align: center;
   position: relative;
-  padding: 10px; }
+  padding: 2px; }
   .myWork .grid-container {
     display: grid;
     grid-template-columns: 50% 50%;
@@ -400,11 +401,11 @@ header {
           opacity: 0; }
       .myWork .grid-container .item .itemNumber {
         position: absolute;
-        border: 5px solid #f39c12;
+        border: 4px solid #f39c12;
         height: 80px;
         width: 80px;
         border-radius: 160px;
-        font-size: 2.8em;
+        font-size: 2.9em;
         top: 0;
         bottom: 0;
         right: 0;
@@ -415,9 +416,9 @@ header {
         opacity: 1;
         overflow: hidden;
         filter: grayscale(0%) !important; }
-    .myWork .grid-container .item1 {
+    .myWork .grid-container .item1, .myWork .grid-container .item2, .myWork .grid-container .item3, .myWork .grid-container .item4 {
       visibility: hidden; }
-    .myWork .grid-container .item1.animated {
+    .myWork .grid-container .item1.animated, .myWork .grid-container .item2.animated, .myWork .grid-container .item3.animated, .myWork .grid-container .item4.animated {
       visibility: visible; }
     .myWork .grid-container .item:hover .itemInInner {
       margin-bottom: 0em;
